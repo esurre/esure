@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    body {
+        background-color: #ffffff;
+        
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #ffffff;
+        color: #007bff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        
+    }
+
+    .menu-icon {
+        font-size: 24px;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        
+    }
+
+    .title-bar {
+        padding: 9px;
+        background-color: #007bff;
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .dropdown {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    select {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .document-list {
+        padding: 15px;
+    }
+
+    .document-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #ffffff;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        border: 1px solid #007bff;
+    }
+
+    .left-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .document-icon {
+        width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    margin-bottom: 20px;
+    }
+
+    .document-info h3 {
+        font-size: 14px;
+        color: #000000;
+        margin: 0;
+        font-weight: bolder;
+        
+    }
+
+    .document-info p {
+        font-size: 12px;
+        color: #000000;
+        margin: 0;
+    }
+
+    .download-icon img {
+        width: 17px;
+        height: 17px;
+        margin-bottom: 17px;
+    }
+
+    #year {
+        border: 1px solid #007bff;
+        background-color: #ffffff;
+    }
+    footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer a:hover {
+    text-decoration:underline;
+}
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h3 class="menu-icon logo">&#9776; esure</h3>
+        </header>
+        
+        <div class="content">
+            <div class="title-bar">
+                <h4><i style="margin-right: 20px; ;" class="fas fa-arrow-left"></i> Documents</h4>
+            </div>
+
+            <div class="dropdown">
+                <label for="year">KEY DOCUMENTS</label>
+                <select id="year">
+                    <option value="2024/25">2024/25</option>
+                </select>
+            </div>
+
+            <div class="document-list">
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Welcome Letter</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Welcome Letter.pdf" class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Certificate of Motor Insurance</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Certificate of Motor Insurance.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Schedule of Insurance</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Schedule of Insurance.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Policy Booklet</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Policy Booklet.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Comprehensive Cover IPID</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Comprehensive Cover IPID.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Breakdown Cover Booklet</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Breakdown Cover Booklet.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Confirmation of Your Direct Debit</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Confirmation of Your Direct Debit.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Pre-Contract Credit Information</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Pre-Contract Credit Information.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Running Acount Credit Agreement</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Running Account Credit Agreement.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Explanation of Your Credit</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Explanation of Your Credit Agreement.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                
+                <h3 style="margin: 15px 15px 15px 5px; font-weight: bolder; font-size: 15px;">UPGRADES</h3>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Breakdown Cover IPID</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Breakdown Cover IPID.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Hire Car Cover IPID</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Hire Car Cover IPID.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+                <div class="document-item">
+                    <div class="left-content">
+                        <img src="document-icon.png" alt="Document Icon" class="document-icon">
+                        <div class="document-info">
+                            <h3>Motor Legal Protection Cover IPID</h3>
+                            <p>Added: 23 Aug 24</p>
+                        </div>
+                    </div>
+                    <a href="fwd/Motor Legal Protection Cover IPID.pdf"  class="download-icon">
+                        <img src="download-icon.png" alt="Download Icon">
+                    </a>
+                </div>
+            </div>
+            <footer>
+                <a href="#">Privacy</a>
+                <a href="#">Legal</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Cookie notice</a>
+               
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

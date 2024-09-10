@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Insurance Policies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .container {
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header and Status Bar */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f6f6f6;
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header .logo h1 {
+            font-size: 28px;
+            color: #0055A2;
+        }
+
+        header .message-icon img {
+            width: 24px;
+            height: 24px;
+        }
+       
+
+        /* Title Outside Blue Box */
+        .main-title {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        /* Policy Section */
+        .policy {
+            background-color: #004FC9;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .policy-details {
+            position: relative;
+            font-size: 16px;
+        }
+
+        .policy-details h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .policy-number {
+            margin-bottom: 7px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .reg-plate {
+            background-color: #fada5c;
+            color: black;
+            font-weight: bold;
+            padding: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 15px;
+            width: fit-content;
+            margin: 10px 0;
+            border: 1px solid black;
+        }
+
+        .dates-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
+
+        .dates {
+            flex: 1;
+            text-align: start;
+            font-size: 12px;
+        }
+        
+        .dates span {
+            font-weight: bolder;
+            font-size: 13px;
+        }
+
+        .vertical-line {
+            border-left: 1px solid white;
+            height: 18px;
+        }
+
+        /* Smaller View Policy Button */
+        .view-policy a {
+            background-color: #ff830f;
+            color: white;
+            text-decoration: none;
+            padding: 5px 13px;
+            border-radius: 20px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: left;
+            width: fit-content;
+            margin-top: 20px;
+            font-weight: bolder;
+            
+        }
+
+        .view-policy a i {
+            margin-left: 0;
+            font-size: 12px;
+        }
+
+        /* Help Section */
+        .help {
+            margin-top: 20px;
+        }
+
+        .help h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #0055A2;
+            font-weight: bolder;
+        }
+
+        .help-options a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #f6f6f6;
+            color: #000000;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #004FC9;
+        }
+
+        .help-options a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .help-options a i {
+            font-size: 18px;
+        }
+        .help-options a img {
+            width: 18px;
+            height: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+          <div class="logo">
+              <h1>esure</h1>
+          </div>
+          <div class="message-icon">
+              <img src="message-icon.png" alt="Message Icon"> <!-- Replace with your message icon image -->
+          </div>
+      </header>
+
+
+        <!-- Car Insurance Policies Title -->
+        <div class="main-title">
+            <h2 style="font-size: 15px;">CAR INSURANCE POLICIES</h2>
+        </div>
+
+        <!-- Policy Section -->
+        <section class="policy">
+            <div class="policy-details">
+                <h3>Volkswagen Golf Phev Gte Gte 201.0...</h3>
+                <div class="reg-plate">NJ67WZY</div>
+                <p class="policy-number">Policy No. P0004511167</p>
+                <div class="dates-container">
+                    <p class="dates">Cover starts <br><span>24 Aug 2024</span></p>
+                    <div class="vertical-line"></div>
+                    <p class="dates end" style="text-align: end;">Cover ends <br><span>23 Aug 2025</span></p>
+                </div>
+                <div class="view-policy">
+                    <a href="summary.html"> View policy<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Section -->
+        <section class="help">
+            <h2>Need help?</h2>
+            <div class="help-options" style="color: black;">
+              <a href="#"><img src="help-center-icon.png" alt="Help Centre Icon"> Help centre</a> <!-- Replace with your help center icon image -->
+              <a href="#"><img src="claim-icon.png" alt="Claim Icon"> How to make a claim</a> <!-- Replace with your claim icon image -->
+          </div>
+        </section>
+    </div>
+</body>
+</html>
